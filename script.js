@@ -11,7 +11,7 @@ function submitValues(e){
 	const checkBox = document.getElementById("checkbox").checked;
 
 	if (checkBox) {
-		localStorage.setItem("Username", name);
+		localStorage.setItem("username", name);
 		localStorage.setItem("password", password);
 	} else {
 		localStorage.clear();
