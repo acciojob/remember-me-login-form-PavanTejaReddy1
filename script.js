@@ -11,7 +11,7 @@ function submitValues(e){
 	const checkBox = document.getElementById("checkbox").checked;
 
 	if (checkBox) {
-		localStorage.setItem("name", name);
+		localStorage.setItem("Username", name);
 		localStorage.setItem("password", password);
 	} else {
 		localStorage.clear();
@@ -25,10 +25,11 @@ function submitValues(e){
 if (localStorage.getItem("name")) {
 	existing.style.display = "block";
 	form.style.display = "none";
-	existing.addEventListener("submit", ()=>{
+	existing.addEventListener("click", ()=>{
 		alert(`Logged in as ${localStorage.getItem("name")}`);
 	})
 }
+
 
 
 
